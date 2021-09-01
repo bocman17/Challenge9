@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color: rgb(70, 23, 117);
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    /* overflow: auto; */
+}
+
+.pw-header {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.pw {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 70px;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    /* overflow: auto; */
+    border-radius: 10px;
+}
+
+.pw .copy {
+    position: absolute;
+    background-color: rgb(42, 7, 77);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    border: none;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 4px rebeccapurple;
+    border-radius: 5px;
+}
+
+.pw:hover .copy {
+    opacity: 1;
+    /* transform: translate(-50%, 50%) */
+}
+
+
+.copy:active {
+    background-color: rgb(42, 7, 77);
+    box-shadow: 0 0px #666;
+    transform: translate(-50%, 60%);
+}
+
+
+.pw-body {
+    padding: 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    display: block;
+    background-color:  rgb(223, 18, 172);
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    min-width: 100%;
+    /* border: none; */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px rebeccapurple;
+    border: none;
+    transition: transform .3s ease;
+
+}
+
+.generate:active {
+    background-color: rgb(163, 5, 150);
+    box-shadow: 0 0px #666;
+    transform: translate(0%, 10%);
+}
